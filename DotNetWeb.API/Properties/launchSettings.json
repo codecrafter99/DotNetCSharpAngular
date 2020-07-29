@@ -18,6 +18,7 @@
       }
     },
     "DotNetWeb.API": {
+      "requireExactSource": false, 
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
