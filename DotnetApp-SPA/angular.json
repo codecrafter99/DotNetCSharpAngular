@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DotnetApp-SPA"
+    }
+  },
+  "defaultProject": "DotnetApp-SPA",
+  "cli": {
+    "analytics": "1b37849c-6a54-4c4e-8e47-9d3fbf393d3f"
+  }
 }
