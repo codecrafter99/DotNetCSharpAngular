@@ -12,8 +12,10 @@
   <div *ngIf="registerMode" class="container">
     <div class="row justify-content-center">
       <div class="col-4">
-        <app-register></app-register>
+        <app-register [valuesFromHome]="values"></app-register>
       </div>
     </div>
   </div>
+
+  <!-- <p *ngFor="let val of values">{{val.name}}</p> -->
 </div>
