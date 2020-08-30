@@ -48,8 +48,8 @@ namespace DotNetWeb.API.Controllers
         public async Task<IActionResult> Login(UserForLoginDto usrDto)
         {
             var userFromRepo = await _repo.Login(
-                usrDto.Username.ToLower(), usrDto.Password);
-            
+            usrDto.Username.ToLower(), usrDto.Password);
+        
             if (userFromRepo == null)
                 return Unauthorized();
             
@@ -84,6 +84,7 @@ namespace DotNetWeb.API.Controllers
             return Ok( new {
                 token = tokenHandler.WriteToken(token)
             });
+            
         }        
     }
 }
